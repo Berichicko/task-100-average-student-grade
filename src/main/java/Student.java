@@ -18,10 +18,10 @@ public class Student {
     public Student() {
     }
 
-    public Student(String nameStudent, String surnameStudent, int gradeStudents) {
+    public Student(String nameStudent, String surnameStudent, int gradeStudent) {
         this.nameStudent = nameStudent;
         this.surnameStudent = surnameStudent;
-        this.gradeStudent = gradeStudents;
+        this.gradeStudent = gradeStudent;
     }
 
     public String getNameStudent() {
@@ -53,7 +53,7 @@ public class Student {
         return "Student{" +
                 "nameStudent='" + nameStudent + '\'' +
                 ", surnameStudent='" + surnameStudent + '\'' +
-                ", gradeStudents=" + gradeStudent +
+                ", gradeStudent=" + gradeStudent +
                 '}';
     }
 
