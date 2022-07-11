@@ -10,12 +10,12 @@ public class Runner {
         studentService.randomName(studentFirst);
         studentService.randomSurname(studentFirst);
         studentService.randomGrades(studentFirst);
-        studentService.setClass(studentFirst);
+        studentFirst.setNameClass("F");
+        studentSecond.setNameClass("F");
 
         studentService.randomName(studentSecond);
         studentService.randomSurname(studentSecond);
         studentService.randomGrades(studentSecond);
-        studentService.setClass(studentSecond);
 
         List<Student> list = new ArrayList<>();
         list.add(studentFirst);
@@ -28,11 +28,11 @@ public class Runner {
         }
 
         int totalGrade = 0;
-        for(int i = 0; i < list.size(); i++)
-        {
+        for (int i = 0; i < list.size(); i++) {
             totalGrade += list.get(i).getGradeStudent();
-            totalGrade = (totalGrade / list.size());
+
         }
+        totalGrade = (totalGrade / list.size());
         System.out.println(list2);
         System.out.println("The overall average mark of all students in the class = " + totalGrade);
     }

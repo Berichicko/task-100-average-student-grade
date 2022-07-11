@@ -7,14 +7,6 @@ public class Student {
     private int gradeStudent;
 
 
-    public String getNameClass() {
-        return nameClass;
-    }
-
-    public void setNameClass(String nameClass) {
-        this.nameClass = nameClass;
-    }
-
     public Student() {
     }
 
@@ -22,6 +14,14 @@ public class Student {
         this.nameStudent = nameStudent;
         this.surnameStudent = surnameStudent;
         this.gradeStudent = gradeStudent;
+    }
+
+    public String getNameClass() {
+        return nameClass;
+    }
+
+    public void setNameClass(String nameClass) {
+        this.nameClass = nameClass;
     }
 
     public String getNameStudent() {
