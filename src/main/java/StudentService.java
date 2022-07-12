@@ -8,15 +8,15 @@ public class StudentService {
     }
 
     public void randomName(Student student) {
-        String FIRST_LETTER_NAME = RandomStringUtils.randomAlphabetic(1).toUpperCase();
-        String LETTER_NAME = RandomStringUtils.randomAlphabetic(5).toLowerCase();
-        student.setNameStudent(FIRST_LETTER_NAME + LETTER_NAME);
+        String firstLetterName = RandomStringUtils.randomAlphabetic(1).toUpperCase();
+        String letterName = RandomStringUtils.randomAlphabetic(5).toLowerCase();
+        student.setNameStudent(firstLetterName + letterName);
     }
 
     public void randomSurname(Student student) {
-        String FIRST_LETTER_SURNAME = RandomStringUtils.randomAlphabetic(1).toUpperCase();
-        String LETTER_SURNAME = RandomStringUtils.randomAlphabetic(5).toLowerCase();
-        student.setSurnameStudent(FIRST_LETTER_SURNAME + LETTER_SURNAME);
+        String firstLetterSurname = RandomStringUtils.randomAlphabetic(1).toUpperCase();
+        String letterSurname = RandomStringUtils.randomAlphabetic(5).toLowerCase();
+        student.setSurnameStudent(firstLetterSurname + letterSurname);
     }
 
     public void randomGrades(Student student) {
